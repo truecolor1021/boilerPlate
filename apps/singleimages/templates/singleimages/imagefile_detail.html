@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Single image detail
+{% endblock title %}
+
+{% block leftbar %}
+<div class="col-md-3">
+    {% include 'partials/_leftbar.html' %}
+</div>
+{% endblock leftbar %}
+
+{% block content %}
+<div class="col-md-8 mt-2">
+    <div class="mx-2 my-2">
+        <img id="image" src="{{ image.get_imageurl }}" alt="" class="img-fluid">
+    </div>
+</div>
+{% endblock content %}
+
